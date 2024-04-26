@@ -1,11 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Portfolio</title>
+
+    <link rel="stylesheet" href="styles/reset.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
+    <div class="header">
+
+        <p class="header__desc ibm-plex-mono-regular">
+            Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые повышают престиж компании и позволяют выделиться на фоне конкурентов
+        </p>
+        <p class="header__intro ibm-plex-mono-regular">
+            Привет, я Саша — фронтенд разработчик и дизайнер сайтов
+        </p>
+    </div>
+    <div class="main">
+        <div class="projects">
+            <h1 class="ibm-plex-mono-regular">Самые свежие проекты</h1>
+            <div class="project">
+                <img class="project__img" src="/resources/images/project1.png" alt="Realhome">
+                <h2 class="project__title title ibm-plex-mono-regular">Realhome</h2>
+                <p class="project__desc ibm-plex-mono-regular">дизайн,верстка, настройка</p>
+            </div>
+            <div class="project">
+                <img class="project__img" src="/resources/images/project2.png" alt="GLASS">
+                <h2 class="project__title title ibm-plex-mono-regular">GLASS</h2>
+                <p class="project__desc ibm-plex-mono-regular">разработка интерфейса</p>
+            </div>
+            <div class="project">
+                <img class="project__img" src="/resources/images/project3.png" alt="Fesiyen">
+                <h2 class="project__title title ibm-plex-mono-regular">Fesiyen</h2>
+                <p class="project__desc ibm-plex-mono-regular">разработка интерфейса</p>
+            </div>
     
+            <a class="all_projects ibm-plex-mono-regular" href="">Смотреть все проекты</a>
+        </div>
+        <div class="competencies">
+            <h1 class="ibm-plex-mono-regular">Мои компетенции</h1>
+            <div class="comp">
+                <img class="comp-logo" src="/resources/icons/comp.png" alt="comp-logo">
+                <h2 class="comp__title title ibm-plex-mono-regular title_green">HTML и CSS</h2>
+                <p class="comp__desc ibm-plex-mono-regular">это основа фронтенд разработки. Умение создавать и правильно структурировать HTML-документы, а также применять стили к этим документам на CSS, является обязательным навыком для каждого фронтенд разработчика.</p>
+            </div>
+            <div class="comp">
+                <img class="comp-logo" src="/resources/icons/comp.png" alt="comp-logo">
+                <h2 class="comp__title title ibm-plex-mono-regular title_green">JavaScript</h2>
+                <p class="comp__desc ibm-plex-mono-regular">это язык программирования, который используется для создания динамического и интерактивного пользовательского интерфейса. Хороший фронтенд разработчик должен быть знаком с основами JavaScript, включая работу с DOM-деревом, асинхронными запросами и манипуляцией данными на стороне клиента.</p>
+            </div>
+            <div class="comp">
+                <img class="comp-logo" src="/resources/icons/comp.png" alt="comp-logo">
+                <h2 class="comp__title title ibm-plex-mono-regular title_green">Работа с библиотеками и фреймворками</h2>
+                <p class="comp__desc ibm-plex-mono-regular">фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под нужды проекта и расширять их функциональность, является очень важным навыком.</p>
+            </div>
+            <div class="comp">
+                <img class="comp-logo" src="/resources/icons/comp.png" alt="comp-logo">
+                <h2 class="comp__title title ibm-plex-mono-regular title_green">Разработка для мобильных устройств и адаптивная верстка</h2>
+                <p class="comp__desc ibm-plex-mono-regular">фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под нужды проекта и расширять их функциональность, является очень важным навыком.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
