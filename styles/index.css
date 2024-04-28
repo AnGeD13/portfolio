@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .ibm-plex-mono-regular {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
@@ -17,13 +21,66 @@
   font-style: normal;
 }
 
+body {
+  background-color: black;
+}
+
 h1 {
   font-size: 55px;
   line-height: 71.5px;
   letter-spacing: -0.03em;
+  color: white;
+}
+
+.h1_part-name {
   padding-top: 150px;
   margin-bottom: 40px;
+}
+
+.nav-section {
+  position: relative;
+  height: 55px;
+}
+
+.logo {
+  position: absolute;
+  display: inline-block;
+  width: 130px;
+  left: 125px;
+  background-color: black;
+  border-radius: 100px;
+  padding-left: 20px;
+}
+
+.logo__text {
+  font-size: 42.41px;
+  line-height: 55.14px;
+  letter-spacing: -0.11em;
+  color: #1bff07;
+  text-transform: uppercase;
+}
+
+.nav-list {
+  display: inline-block;
+  position: absolute;
+  right: 125px;
+}
+
+.nav-item {
+  text-decoration: none;
   color: white;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: -0.03em;
+  margin-right: 50px;
+}
+
+.nav-item:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.nav-item:hover {
+  color: #1bff07;
 }
 
 .header {
@@ -34,6 +91,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
+  padding-top: 30px;
 }
 
 .header__desc {
@@ -63,8 +121,8 @@ h1 {
 }
 
 .main {
-  background-color: black;
   padding: 0 125px;
+  padding-bottom: 150px;
 }
 
 .project {
@@ -78,10 +136,18 @@ h1 {
   object-fit: cover;
 }
 
-.title {
+h2 {
   font-size: 35px;
   line-height: 45.5px;
   letter-spacing: -0.03em;
+}
+
+.task__h2 {
+  display: block;
+  width: 403px;
+  color: white;
+
+  margin-bottom: 40px;
 }
 
 .project__title {
@@ -91,6 +157,8 @@ h1 {
 }
 
 .comp__title {
+  display: block;
+  width: 778px;
   margin-top: 12px;
   margin-bottom: 15px;
 }
@@ -128,6 +196,11 @@ h1 {
   padding-top: 56px;
 }
 
+.all_projects:hover {
+  color: #1bff07;
+  background-color: black;
+}
+
 .competencies {
   padding-bottom: 150px;
 }
@@ -153,4 +226,118 @@ h1 {
   line-height: 28.6px;
   letter-spacing: -0.03em;
   color: white;
+}
+
+.task {
+  margin-bottom: 100px;
+}
+
+.task:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.task__img {
+  display: block;
+  width: 1150px;
+  height: 200px;
+}
+
+.task__card {
+  position: relative;
+  width: 1150px;
+  height: 283px;
+  border-radius: 30px;
+  background-color: #191c19;
+}
+
+.h1_card-title {
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+.task__text {
+  display: block;
+  width: 749px;
+  color: white;
+  margin-left: 40px;
+  margin-top: 15px;
+
+  font-size: 22px;
+  line-height: 28.6px;
+  letter-spacing: -0.03em;
+}
+
+.contacts {
+  width: 100%;
+  position: relative;
+  height: 717px;
+  border-radius: 30px;
+  background-color: #191c19;
+  margin-bottom: 150px;
+}
+
+.contacts__text {
+  position: absolute;
+  left: 125px;
+  top: 320px;
+  width: 310px;
+  height: 308px;
+}
+
+.contacts__title {
+  font-size: 35px;
+  line-height: 60px;
+  letter-spacing: -0.03em;
+  color: white;
+  margin-bottom: 28px;
+}
+
+.contacts__type {
+  display: block;
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: -0.03em;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.contacts__type:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.contacts__type:hover {
+  color: #1bff07;
+}
+
+.contacts__img {
+  position: absolute;
+  border-radius: 0 30px 30px 0;
+  right: 0;
+}
+
+.footer {
+  position: relative;
+  background-color: white;
+  border-radius: 30px 30px 0 0;
+  height: 230px;
+}
+
+.footer__text {
+  position: absolute;
+  left: 125px;
+  top: 76px;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: -0.03em;
+}
+
+.footer__text-end {
+  position: absolute;
+  left: 125px;
+  top: 172px;
+  font-size: 20px;
+  line-height: 27.32px;
+  letter-spacing: -0.03em;
+  opacity: 50%;
 }
