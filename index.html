@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Portfolio</title>
 
     <link rel="stylesheet" href="styles/reset.css">
@@ -19,111 +19,114 @@
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-    <div class="header">
-        <div class="nav-section">
-            <div class="logo">
-                <p class="logo__text ibm-plex-mono-bold">orlov</p>
-            </div>
-            <div class="nav-list">
-                <a class="nav-item ibm-plex-mono-regular" href="#portfolio">портфолио</a>
-                <a class="nav-item ibm-plex-mono-regular" href="#competencies">компетенции</a>
-                <a class="nav-item ibm-plex-mono-regular" href="#services">услуги</a>
-                <a class="nav-item ibm-plex-mono-regular" href="#contacts">контакты</a>
+    <div class="container">
+        
+        <div class="header">
+            <!-- <div class="nav content-center">
+                <div class="nav__section">
+                    <div class="nav__content">
+                        <div class="nav__logo"></div>
+                        <ul class="nav__links">
+                            <li href="">портфолио</li>
+                            <li href="">компетенции</li>
+                            <li href="">услуги</li>
+                            <li href="">контакты</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="header__content content-center">
+                <div class="header__text ibm-plex-mono-regular">
+                    Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые повышают престиж компании и позволяют выделиться на фоне конкурентов
+                </div>
+                <div class="header__intro ibm-plex-mono-regular">
+                    Привет, я Саша — фронтенд разработчик и дизайнер сайтов
+                </div>
             </div>
         </div>
-        <p class="header__desc ibm-plex-mono-regular">
-            Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые повышают престиж компании и позволяют выделиться на фоне конкурентов
-        </p>
-        <p class="header__intro ibm-plex-mono-regular">
-            Привет, я Саша — фронтенд разработчик и дизайнер сайтов
-        </p>
-    </div>
-    <div class="main">
         <div class="projects">
-            <h1 id="portfolio" class="h1_part-name ibm-plex-mono-regular">Самые свежие проекты</h1>
-            <div class="project">
-                <img class="project__img" src="/resources/images/project1.png" alt="Realhome">
-                <h2 class="project__title ibm-plex-mono-regular">Realhome</h2>
-                <p class="project__desc ibm-plex-mono-regular">дизайн,верстка, настройка</p>
+            <div class="project__section content-center">
+                <h2 class="project__section__title ibm-plex-mono-regular">Самые свежие проекты</h2>
+                <ul class="project__list">
+                    <li class="project__item">
+                        <picture class="project__img">
+                            <source class="project__img" srcset="/resources/images/projects/project1_mobile.png" media="(max-width: 500px)">
+                            <source class="project__img" srcset="/resources/images/projects/project1_tablet.png" media="(max-width: 960px)">
+                            <img class="project__img" src="/resources/images/projects/project1.png" alt="Метрика">
+                        </picture>
+                        <h3 class="project__title ibm-plex-mono-regular">Метрика</h3>
+                        <p class="project__text ibm-plex-mono-regular">верстка, настройка</p>
+                        <div class="bubble ibm-plex-mono-regular">дизайн интерьера</div>
+                    </li>
+
+                    <li class="project__item">
+                        <picture class="project__img">
+                            <source class="project__img" srcset="/resources/images/projects/project2_mobile.png" media="(max-width: 500px)">
+                            <source class="project__img" srcset="/resources/images/projects/project2_tablet.png" media="(max-width: 960px)">
+                            <img class="project__img" src="/resources/images/projects/project2.png" alt="Nothing">
+                        </picture>
+                        <h3 class="project__title ibm-plex-mono-regular">Nothing</h3>
+                        <p class="project__text ibm-plex-mono-regular">верстка, настройка</p>
+                        <div class="bubble ibm-plex-mono-regular">презентация продукта</div>
+                    </li>
+
+                    <li class="project__item">
+                        <picture class="project__img">
+                            <source class="project__img" srcset="/resources/images/projects/project3_mobile.png" media="(max-width: 500px)">
+                            <source class="project__img" srcset="/resources/images/projects/project3_tablet.png" media="(max-width: 960px)">
+                            <img class="project__img" src="/resources/images/projects/project3.png" alt="TOPTRIP">
+                        </picture>
+                        <h3 class="project__title ibm-plex-mono-regular">TOPTRIP</h3>
+                        <p class="project__text ibm-plex-mono-regular">верстка</p>
+                        <div class="bubble ibm-plex-mono-regular">заказ путешествий</div>
+                    </li>
+                </ul>
+
+                <a href="" class="project-btn green-btn ibm-plex-mono-regular">Смотреть все проекты</a>
             </div>
-            <div class="project">
-                <img class="project__img" src="/resources/images/project2.png" alt="GLASS">
-                <h2 class="project__title ibm-plex-mono-regular">GLASS</h2>
-                <p class="project__desc ibm-plex-mono-regular">разработка интерфейса</p>
-            </div>
-            <div class="project">
-                <img class="project__img" src="/resources/images/project3.png" alt="Fesiyen">
-                <h2 class="project__title ibm-plex-mono-regular">Fesiyen</h2>
-                <p class="project__desc ibm-plex-mono-regular">разработка интерфейса</p>
-            </div>
-    
-            <a class="all_projects ibm-plex-mono-regular" href="">Смотреть все проекты</a>
         </div>
         <div class="competencies">
-            <h1 id="competencies" class="h1_part-name ibm-plex-mono-regular">Мои компетенции</h1>
-            <div class="comp">
-                <img class="comp-logo" src="/resources/icons/comp.png" alt="comp-logo">
-                <h2 class="comp__title ibm-plex-mono-regular title_green">HTML и CSS</h2>
-                <p class="comp__desc ibm-plex-mono-regular">это основа фронтенд разработки. Умение создавать и правильно структурировать HTML-документы, а также применять стили к этим документам на CSS, является обязательным навыком для каждого фронтенд разработчика.</p>
-            </div>
-            <div class="comp">
-                <img class="comp-logo" src="/resources/icons/comp.png" alt="comp-logo">
-                <h2 class="comp__title ibm-plex-mono-regular title_green">JavaScript</h2>
-                <p class="comp__desc ibm-plex-mono-regular">это язык программирования, который используется для создания динамического и интерактивного пользовательского интерфейса. Хороший фронтенд разработчик должен быть знаком с основами JavaScript, включая работу с DOM-деревом, асинхронными запросами и манипуляцией данными на стороне клиента.</p>
-            </div>
-            <div class="comp">
-                <img class="comp-logo" src="/resources/icons/comp.png" alt="comp-logo">
-                <h2 class="comp__title ibm-plex-mono-regular title_green">Работа с библиотеками и фреймворками</h2>
-                <p class="comp__desc ibm-plex-mono-regular">фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под нужды проекта и расширять их функциональность, является очень важным навыком.</p>
-            </div>
-            <div class="comp">
-                <img class="comp-logo" src="/resources/icons/comp.png" alt="comp-logo">
-                <h2 class="comp__title ibm-plex-mono-regular title_green">Разработка для мобильных устройств и адаптивная верстка</h2>
-                <p class="comp__desc ibm-plex-mono-regular">фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под нужды проекта и расширять их функциональность, является очень важным навыком.</p>
+            <div class="competencies__section content-center">
+                <h2 class="ibm-plex-mono-regular">Мои компетенции</h2>
+                <ul class="comp__list">
+                    <li class="comp__item">
+                        <img class="comp__logo" src="/resources/icons/comp-icons/comp1.png" alt=">HTML и CSS">
+                        <h3 class="comp__title ibm-plex-mono-regular">HTML и CSS</h3>
+                        <p class="comp__text ibm-plex-mono-regular">
+                            это основа фронтенд разработки. Умение создавать и правильно структурировать HTML-документы, а также применять стили к этим документам на CSS, является обязательным навыком для каждого фронтенд разработчика.
+                        </p>
+                    </li>
+
+                    <li class="comp__item">
+                        <img class="comp__logo" src="/resources/icons/comp-icons/comp2.png" alt="JavaScript">
+                        <h3 class="comp__title ibm-plex-mono-regular">JavaScript</h3>
+                        <p class="comp__text ibm-plex-mono-regular">
+                            это язык программирования, который используется для создания динамического и интерактивного пользовательского интерфейса. Хороший фронтенд разработчик должен быть знаком с основами JavaScript, включая работу с DOM-деревом, асинхронными запросами и манипуляцией данными на стороне клиента.
+                        </p>
+                    </li>
+
+                    <li class="comp__item">
+                        <img class="comp__logo" src="/resources/icons/comp-icons/comp3.png" alt="Работа с библиотеками и фреймворками">
+                        <h3 class="comp__title ibm-plex-mono-regular">Работа с библиотеками и фреймворками</h3>
+                        <p class="comp__text ibm-plex-mono-regular">
+                            фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под нужды проекта и расширять их функциональность, является очень важным навыком.
+                        </p>
+                    </li>
+
+                    <li class="comp__item">
+                        <img class="comp__logo" src="/resources/icons/comp-icons/comp4.png" alt="Разработка для мобильных устройств и адаптивная верстка">
+                        <h3 class="comp__title ibm-plex-mono-regular">Разработка для мобильных устройств и адаптивная верстка</h3>
+                        <p class="comp__text ibm-plex-mono-regular">
+                            фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под нужды проекта и расширять их функциональность, является очень важным навыком.
+                        </p>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="tasks">
-            <h2 id="services" class="ibm-plex-mono-regular task__h2">Помогаю реализовать широкий спектр задач</h2>
-            <div class="task">
-                <img class="task__img" src="/resources/images/task1.png" alt="Разработка сайта под ключ">
-                <div class="task__card">
-                    <h1 class="title_green h1_card-title ibm-plex-mono-regular">Разработка сайта под ключ</h1>
-                    <p class="task__text ibm-plex-mono-regular">Это создание дизайна веб-сайтов, созданный для удобства пользователя и решения бизнес-задач</br> Сайты должны быть понятными и удобными, ведь чем понятнее сайт, тем быстрее пользователь совершит целевое действие</p>
-                </div>
-            </div>
-
-            <div class="task">
-                <img class="task__img" src="/resources/images/task2.png" alt="Верстка сайтов">
-                <div class="task__card">
-                    <h1 class="title_green h1_card-title ibm-plex-mono-regular">Верстка сайтов</h1>
-                    <p class="task__text ibm-plex-mono-regular">Это процесс создания HTML-документов и применения к ним стилей на CSS. Фронтенд разработчик может помочь создать привлекательный и удобный интерфейс для вашего сайта</p>
-                </div>
-            </div>
-
-            <div class="task">
-                <img class="task__img" src="/resources/images/task3.png" alt="Разработка мобильного интерфейса">
-                <div class="task__card">
-                    <h1 class="title_green h1_card-title ibm-plex-mono-regular">Разработка мобильного интерфейса</h1>
-                    <p class="task__text ibm-plex-mono-regular">Это процесс создания интерактивных элементов на странице с помощью JavaScript. Фронтенд разработчик может помочь создать динамический и удобный пользовательский интерфейс для вашего сайта или приложения.</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div id="contacts" class="contacts">
-        <div class="contacts__text">
-            <p class="contacts__title ibm-plex-mono-regular">для связи:</p>
-            <div class="contacts-nav">
-                <a href="" class="contacts__type ibm-plex-mono-regular">instagram</a>
-                <a href="" class="contacts__type ibm-plex-mono-regular">telegram</a>
-                <a href="" class="contacts__type ibm-plex-mono-regular">mail</a>
-            </div>
-        </div>
-        <img class="contacts__img" src="/resources/images/programmer.png" alt="programmer">
-    </div>
-    <div class="footer">
-        <p class="footer__text ibm-plex-mono-regular">Портфолио фронтенд-разработчика Саши Орлова</p>
-        <p class="footer__text-end ibm-plex-mono-regular">Все права защищены. 2024</p>
+        <div class="tasks"></div>
+        <div class="contacts"></div>
+        <div class="footer"></div>
     </div>
 </body>
 </html>
