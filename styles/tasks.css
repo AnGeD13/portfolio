@@ -1,12 +1,150 @@
+.tasks {
+  color: white;
+  margin-bottom: 150px;
+}
+
+.task__section__title {
+  display: block;
+  width: 403px;
+  height: 92px;
+  margin-bottom: 80px;
+}
+
+.task__item {
+  margin-bottom: 40px;
+}
+
+.task__item:last-child {
+  margin-bottom: 0;
+}
+
+.task__img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50%;
+  border-radius: 24.26px;
+}
+
+.task__content {
+  display: flex;
+  height: 283px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 20px;
+  background-color: #191c19;
+  border-radius: 30px;
+  padding-top: 40px;
+  padding-bottom: 64px;
+  padding-left: 40px;
+  padding-right: 45px;
+}
+
+.task__part {
+  display: block;
+  width: calc(50% - 20px);
+}
+
+.task__title {
+  display: block;
+  font-size: 55px;
+  line-height: 60.5px;
+  letter-spacing: -0.03em;
+  color: #1bff07;
+}
+
+.task__text {
+  display: block;
+  font-size: 22px;
+  line-height: 28.6px;
+  letter-spacing: -0.03em;
+}
+
 @media (max-width: 1199px) {
 }
 @media (max-width: 960px) {
+  .tasks {
+    margin-bottom: 110px;
+  }
+
+  .task__section__title {
+    width: 326px;
+    height: 74px;
+    margin-bottom: 60px;
+  }
+
+  .task__item {
+    margin-bottom: 32px;
+  }
+
+  .task__img {
+    height: 162px;
+  }
+
+  .task__content {
+    height: auto;
+    border-radius: 24.26px;
+    padding-top: 32px;
+    padding-bottom: 55px;
+    padding-left: 32px;
+    padding-right: 36px;
+  }
+
+  .task__title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .task__text {
+    font-size: 18px;
+    line-height: 23.4px;
+  }
 }
 
 @media (max-width: 767px) {
 }
 
-@media (max-width: 500px) {
+@media (max-width: 520px) {
+  .tasks {
+    margin-bottom: 100px;
+  }
+
+  .task__section__title {
+    width: 326px;
+    height: 74px;
+  }
+
+  .task__item {
+    margin-bottom: 60px;
+  }
+
+  .task__img {
+    height: 225px;
+  }
+
+  .task__content {
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 15px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .task__part {
+    width: 100%;
+  }
+
+  .task__title {
+    font-size: 35px;
+    line-height: 38.5px;
+  }
+
+  .task__text {
+    font-size: 18px;
+    line-height: 23.4px;
+  }
 }
 
 @media (max-width: 424px) {
