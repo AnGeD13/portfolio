@@ -58,6 +58,7 @@ h3 {
   color: black;
   background-color: #1bff07;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 @media (max-width: 1199px) {
