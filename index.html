@@ -22,19 +22,43 @@
     <div class="container">
         
         <div class="header">
-            <!-- <div class="nav content-center">
+            <div class="nav content-center">
                 <div class="nav__section">
                     <div class="nav__content">
-                        <div class="nav__logo"></div>
-                        <ul class="nav__links">
-                            <li href="">портфолио</li>
-                            <li href="">компетенции</li>
-                            <li href="">услуги</li>
-                            <li href="">контакты</li>
+                        <div class="nav__logo ibm-plex-mono-bold">
+                            ORLOV
+                        </div>
+                        <ul class="nav__links ibm-plex-mono-regular">
+                            <a class="nav__link" href="#portfolio">портфолио</a>
+                            <a class="nav__link" href="#competencies">компетенции</a>
+                            <a class="nav__link" href="#services">услуги</a>
+                            <a class="nav__link" href="#contacts">контакты</a>
+                        </ul>
+
+
+                        <button class="nav__burger-btn js-burger-btn"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="burger js-burger">
+                <div class="burger__section">
+                    <div class="burger__logo nav__logo ibm-plex-mono-bold">ORLOV</div>
+                    <div class="burger__nav ibm-plex-mono-regular">
+                        <a class="burger__nav__link" href="#portfolio">портфолио</a>
+                        <a class="burger__nav__link" href="#competencies">компетенции</a>
+                        <a class="burger__nav__link" href="#services">услуги</a>
+                        <a class="burger__nav__link" href="#contacts">контакты</a>
+                    </div>
+                    <div class="burger__contacts ibm-plex-mono-regular js-burger__content">
+                        <p class="burger__contacts__text">для связи:</p>
+                        <ul class="burger__contacts__list">
+                            <a class="burger__contacts__link" href="/">telegram</a>
+                            <a class="burger__contacts__link" href="mailto:random@mail.com">mail</a>
+                            <a class="burger__contacts__link" href="/">instagram</a>
                         </ul>
                     </div>
                 </div>
-            </div> -->
+            </div>
 
             <div class="header__content content-center">
                 <div class="header__text ibm-plex-mono-regular">
@@ -45,7 +69,7 @@
                 </div>
             </div>
         </div>
-        <div class="projects">
+        <div id="portfolio" class="projects">
             <div class="project__section content-center">
                 <h2 class="project__section__title ibm-plex-mono-regular">Самые свежие проекты</h2>
                 <ul class="project__list">
@@ -57,7 +81,7 @@
                         </picture>
                         <h3 class="project__title ibm-plex-mono-regular">Метрика</h3>
                         <p class="project__text ibm-plex-mono-regular">верстка, настройка</p>
-                        <div class="bubble ibm-plex-mono-regular">дизайн интерьера</div>
+                        <div class="bubble manrope">дизайн интерьера</div>
                     </li>
 
                     <li class="project__item">
@@ -68,7 +92,7 @@
                         </picture>
                         <h3 class="project__title ibm-plex-mono-regular">Nothing</h3>
                         <p class="project__text ibm-plex-mono-regular">верстка, настройка</p>
-                        <div class="bubble ibm-plex-mono-regular">презентация продукта</div>
+                        <div class="bubble manrope">презентация продукта</div>
                     </li>
 
                     <li class="project__item">
@@ -79,14 +103,14 @@
                         </picture>
                         <h3 class="project__title ibm-plex-mono-regular">TOPTRIP</h3>
                         <p class="project__text ibm-plex-mono-regular">верстка</p>
-                        <div class="bubble ibm-plex-mono-regular">заказ путешествий</div>
+                        <div class="bubble manrope">заказ путешествий</div>
                     </li>
                 </ul>
 
                 <a href="" class="project-btn green-btn ibm-plex-mono-regular">Смотреть все проекты</a>
             </div>
         </div>
-        <div class="competencies">
+        <div id="competencies" class="competencies">
             <div class="competencies__section content-center">
                 <h2 class="ibm-plex-mono-regular">Мои компетенции</h2>
                 <ul class="comp__list">
@@ -124,7 +148,7 @@
                 </ul>
             </div>
         </div>
-        <div class="tasks">
+        <div id="services" class="tasks">
             <div class="task__section content-center">
                 <h3 class="task__section__title ibm-plex-mono-regular">Помогаю реализовать широкий спектр задач</h3>
                 <ul class="tasks__list">
@@ -178,7 +202,7 @@
                 </ul>
             </div>
         </div>
-        <div class="contacts">
+        <div id="contacts" class="contacts">
             <div class="contacts__section content-center">
                 <p class="contacts__title ibm-plex-mono-regular">Для связи со мной заполните простую форму</p>
                 <form action="">
@@ -189,6 +213,7 @@
                     <input 
                     class="contacts__form__item ibm-plex-mono-regular"
                     type="email"
+                    name="email"
                     placeholder="example@mail.com"
                     >
                     <button class="contacts-btn green-btn ibm-plex-mono-regular">Отправить</button>
@@ -199,7 +224,20 @@
                 <img class="contacts__img" src="/resources/images/contacts/contacts.png" alt="programmer">
             </picture>
         </div>
-        <div class="footer"></div>
+        <div class="footer">
+            <div class="content-center footer__section">
+                <p class="footer__item footer__text-black manrope">Портфолио фронтенд-разработчика Саши Орлова</p>
+                <ul class="footer__item footer__item-right footer__text-black manrope">
+                    <a class="footer__link" href="mailto:random@mail.com">mail</a>
+                    <a class="footer__link" href="">telegram</a>
+                    <a class="footer__link" href="">instagram</a>
+                </ul>
+                <p class="footer__item footer__text-gray manrope">Все права защищены. 2024</p>
+                <p class="footer__item footer__item-right footer__text-gray manrope">политика обработки данных</p>
+            </div>
+
+        </div>
     </div>
+    <script src="/scripts/burger.js"></script>
 </body>
 </html>
