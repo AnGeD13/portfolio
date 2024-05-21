@@ -20,12 +20,15 @@
   text-align: right;
 }
 
-.footer__link {
-  color: black;
+.footer__link_item {
   margin-right: 24px;
 }
 
-.footer__link:last-child {
+.footer__link {
+  color: black;
+}
+
+.footer__link_item:last-child {
   margin-right: 0;
 }
 
@@ -56,7 +59,7 @@
     row-gap: 40px;
   }
 
-  .footer__link {
+  .footer__link_item {
     margin-right: 14px;
   }
 
@@ -96,7 +99,7 @@
     text-align: left;
   }
 
-  .footer__link {
+  .footer__link_item {
     margin-right: 10px;
   }
 
